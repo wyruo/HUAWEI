@@ -1,0 +1,33 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	min-width: 1250px;
+}
+.blackTop{
+	width: 100%;
+	height: 30px;
+	background-color: black;
+}
+.blackTop a{
+	color: white;
+	text-decoration: none;
+}
+.container{
+	width: 80%;
+	height: 100%;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+.website{	
+}
+.blackTopRight{
+	float: right;
+}
+.elect{
+	float: right;
+}
+.register{
+	float: right;
+}
