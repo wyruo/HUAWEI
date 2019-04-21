@@ -37,11 +37,7 @@ body{
 .website{/*左侧导航，集团网站*/
 	float: left;
 }
-.websiteContainer{/*集团网站 隐藏部分*/
-	width: 100%;
-	height: 100px;
-	display: none;
-}
+
 .blackTopRight{/*右侧导航*/
 	float: right;
 }
@@ -68,6 +64,32 @@ body{
 }
 .register a:hover{
 	text-decoration: underline;
+}
+
+.websiteContainer{/*集团网站 隐藏部分*/
+	width: 100%;
+	height: 150px;
+	display: none;
+}
+.websiteUl{
+	list-style-type: none;
+	padding: 40px 0;
+}
+.websiteLi{
+	float: left;
+	width: 19%;
+	padding-right: 60px;
+	font-size: 14px;
+}
+.websiteLi h4{
+	margin-bottom: 10px;
+}
+.websiteLi a{
+	color: black;
+	text-decoration: none;
+}
+.websiteLi i{
+	color: #F66F6A;
 }
 .whiteTop{/*白色顶部*/
 	width: 100%;
