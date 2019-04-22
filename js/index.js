@@ -5,4 +5,7 @@ $(document).ready(function(){
 	$(".elect").click(function(){
 		$(".electContainer").slideToggle("slow");
 	});
+	$(".searchOpen").click(function(){
+ 
+	})
 });
