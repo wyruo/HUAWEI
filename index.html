@@ -4,8 +4,8 @@
 	<head>
 		<meta charset="utf-8" />
 		<title>华为 - 构建万物互联的智能世界</title>
-		<link rel="stylesheet" href="css/index.css" />
-		
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<link rel="stylesheet" href="css/index.css" />		
 		<script src="js/jQuery.min.js" ></script>
 		<script src="js/index.js"></script>
 		<link rel="stylesheet" href="font-awesome/css/font-awesome.css">
@@ -225,26 +225,26 @@
 					<img src="images/21.png" />
 				</div>
 				<div class="whiteTopCenter">
-					<ul class="twoLi">
-						<li class="classify"><!--手机、笔记本&平板...-->
+					<div class="twoLi">
+						<div class="classify"><!--手机、笔记本&平板...-->
 							<img src="images/03.png" />
-							<div class="text">手机、笔记本&平板...
+							<p>手机、笔记本&平板...
 								<i class="fa fa-angle-down"></i>
-							</div>
-						</li>
-						<li class="serve"><!--解决方案&服务-->
+							</p>
+						</div>
+						<div class="classify"><!--解决方案&服务-->
 							<img src="images/04.png" />
-							<div class="text">解决方案&服务
+							<p>解决方案&服务
 								<i class="fa fa-angle-down"></i>
-							</div>
-						</li>
-					</ul>
+							</p>
+						</div>
+					</div>
 					<div class="hw1"><!--华为商城 华为云-->
-						<div class="hw1Text" style="padding-left: 50px;">
+						<div class="classify">
 							华为商城
 							<img src="images/05.png" />
 						</div>
-						<div class="hw1Text">
+						<div class="classify">
 							华为云
 							<img src="images/05.png" />
 						</div>
@@ -258,16 +258,67 @@
 						<div class="search-input">
 							<input type="text" name="search" placeholder="搜索"  />							
 						</div>
-						<a href="javascript:;">
+						<a href="javascript:;" class="guan">
 							<i class="fa fa-times"></i>
 						</a>
 					</div>
 				</div>
+			    <div class="searchSuo">
+			    	<ul class="searchSuo-ul">		    		
+			    		<li class="searchSuo-center">
+			    			<i class="fa fa-bars"></i>
+			    		</li>
+			    		<li style="color: #9e9e9ead;">|</li>
+			    		<li class="searchSuo-search">
+			    			<i class="fa fa-search"></i>
+			    		</li>
+			    	</ul>
+			    </div>
 			</div>
-		</div>		
+		</div>
+		<div class="hwP30"><!--HUAWEI P30-->
+			<div class="containerr">
+				<div class="hwP30Left">
+					<div class="hwP30Left-text">
+						<img src="images/3.png" class="img1" / >
+						<p class="hwP30Left-p">未来影像</p>
+						<div class="hwP30Left-more">了解更多
+							<i class="fa fa-angle-right"></i>
+						</div>
+						<div class="hwP30Left-small">*图片仅供参考，请以实物为准</div>
+					</div>
+					<div class="hwP30Left-img">
+						<img src="images/23.png" class="img3" />
+						<img src="images/4.png" class="img2" />
+					</div>
+				</div>
+				<div class="hwP30Right">
+					<img src="images/28.jpg" />
+					<div class="imgBottom">
+						<p class="imgBottom-p1">产品</p>
+						<h2>HUAWEI Mate20 系列</h2>
+						<p class="imgBottom-p2">智慧新高度</p>
+						<p class="imgBottom-p3">立即购买
+							<i class="fa fa-angle-right"></i>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	    <div class="hwMateX">
+	    	<div class="containerr">
+	    		<div class="xian">
+	    		    <img src="images/18.jpg" class="big"/>
+	    		    <img src="images/5.png" class="small" />
+	    		    <p class="knowMore">了解更多
+	    		    	<i class="fa fa-angle-right"></i>
+	    		    </p>
+	    		</div>
+	    	</div>
+	    </div>
 	    <div class="footer"><!--尾部-->
 	    	<div class="footTop">
-	    		<div class="container">
+	    		<div class="container" style="height: auto;">
 	    			<div class="row">
 	    				<div class="part11">
 	    					<h3 class="footer-title">关于华为
@@ -358,7 +409,7 @@
 	    		</div>
 	    	</div>
 	        <div class="footBottom"><!--黑色底部-->
-	        	<div class="containerr">
+	        	<div class="containerrr">
 	        		<div class="foot-bot"></div>
 	        		<div class="footBottomLeft">©2019 华为技术有限公司    粤A2-20044005号</div>
 	        		<ul class="footBottomRight">

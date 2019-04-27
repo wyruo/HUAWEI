@@ -2,6 +2,24 @@
 	margin: 0;
 	padding: 0;
 }
+.container{
+	width: 80%;
+	height: auto;
+	margin: 0 auto;
+	position: relative;
+}
+
+.containerr{
+	width: 80%;
+	height: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+@media only screen and (max-width: 1300px) {
+	.containerr{
+		width: 100%;
+	}
+}
 .blackTop{/*顶部黑色区域*/
 	width: 100%;
 	height: 30px;
@@ -10,8 +28,8 @@
 	font-weight: bold;
 	position: relative;
 }
-@media only screen and (max-width: 991px){
-	/*如果文档宽度小于 1250像素则隐藏*/
+@media screen and (max-width: 768px){
+	/*如果文档宽度小于 768像素则隐藏*/
 	.blackTop{
 		display: none;
 	}
@@ -24,13 +42,7 @@
 .blackTop i{	
 	color: white;
 }
-.container{
-	width: 85%;
-	height: auto;
-	margin: 0 auto;
-	padding: 0 10px;
-	position: relative;
-}
+
 .website{/*左侧导航，集团网站*/
 	float: left;
 }
@@ -111,84 +123,84 @@
 	box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.2);
 	position: relative;
 }
+@media only screen and (max-width: 768px) {
+	.whiteTop{
+		height: 66px;
+	}
+}
 .hw{/*HUAWEI标志*/
-	max-width: 133px;
-	margin: 20px 60px 0 0;
-	overflow: hidden;
+	width: 20%;
+	height: 100%;
 	float: left;
 }
 .hw img{
-	max-width: 133px;
+	width: 80%;
+	height: 40px;
+	padding: 20px 10%;
 }
 .whiteTopCenter{/*白色导航中间部分*/
 	float: left;
+	width:70%;
+	height: 100%;
+}
+@media only screen and (max-width: 768px) {	
+	
+	.whiteTopCenter{
+		display: none;
+	}
 }
 .twoLi{/*标志右侧俩列表*/
-	list-style-type: none;
+	width: 60%;
+	height: 100%;
 	float: left;
-	padding: 21px 0 0;
 }
-.twoLi li{
+.classify{
+	width: 50%;
+	height: 100%;
 	float: left;
-	padding-right: 30px;
+	white-space:nowrap;
+	line-height: 80px;
+	vertical-align:middle;
+	overflow: hidden;
 }
-.twoLi img{
-	float: left;
-	width: 30px;
-	height: 35px;
-}
-.twoLi .text{
-	float: left;
-	padding-left: 20px;
-	font-size: 18px;
-	line-height: 35px;
-}
-.twoLi .text:hover{
+.classify:hover{
 	color: #F77C77;
 	cursor: pointer;
 }
-.twoLi i{
-	font-size: 20px;
+.classify img{
+	width: 30px;
+	height: 30px;
+	padding: 25px 0;
+	float: left;
 }
 
 .hw1{/*华为商城 华为云*/
+	width: 40%;
+	height: 100%;
 	float: left;
-	margin-top: 9px;
-	padding-top: 17px;
-	border-left: 2px solid gainsboro;
 }
-.hw1Text{
-	float: left;
-	padding: 0 20px;
-	font-size: 18px;
-}
-.hw1Text:hover{
-	color: #F77C77;
-	cursor: pointer;
-}
-.hw1Text img{
-	width: 25px;
-}
+
 .search{
-	float: right;
-	margin-top: 15px;
+	padding-top: 15px;
 	margin-right: 0;
-	position: relative;
 }
-.searchOpen{/*显出的搜索图标*/
-	float: right;
+@media only screen and (max-width: 768px) {
+	.search{
+		display: none;
+	}
+}
+.searchOpen{/*大屏时显出的搜索图标*/
+    float: right;
 	font-size: 27px;
 	padding-top: 10px;
 	cursor: pointer;
 }
-.searchClose{
-	transform: scale3d(1, 1, 1);
+.searchClose{/*点击搜索后出现的样式*/
 	position: absolute;
 	right: 0;
-	width: 400px;
-	transform-origin: right center;
-	transition: transform .3s;
+	width: 400px;	
 	padding-right: 100px;
+	display: none;
 }
 .search-input{
 	width: 100%;
@@ -211,6 +223,199 @@
 	top: 5px;
 	right: 0px;
 }
+.searchSuo{/*缩放时出现样式*/
+	overflow: hidden;
+	display: none;
+}
+@media only screen and (max-width: 768px) {
+	.searchSuo{
+		display: block;
+	}
+}
+.searchSuo-ul{
+	list-style-type: none;
+	float: right;
+}
+.searchSuo li{
+	float: right;
+	margin-right: 15px;
+	margin-top: 20px;
+	font-size: 25px;
+	color: #060606ad;
+	cursor: pointer;*/
+}
+.hwP30{/*HUAWEI P30*/
+	width: 100%;
+	height: 650px;
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 40px;
+	padding-top: 100px;
+}
+@media only screen and (max-width: 768px) {
+	.hwP30{
+		height: auto;
+	}
+}
+.hwP30Left{
+	background-color: #3BBDDD;
+	width: 50%;
+	float: left;
+	position: relative;
+}
+@media only screen and (max-width: 768px) {
+	.hwP30Left{
+		width: 100%;
+		height: 50%;
+		padding-top: 50%;
+	}
+}
+.hwP30Left-text{
+	width: 240px;
+	margin-top: 80px;
+	margin-left: 10%;
+	color: white;
+}
+@media only screen and (max-width: 768px) {
+	.hwP30Left-text{
+		margin-left: 5%;
+		margin-top: 0;
+	}
+}
+.img1{
+	width: 100%;
+}
+.hwP30Left-p{
+	margin: 20px 0;
+	font-size: 20px;
+}
+.hwP30Left-more{
+	margin-top: 60px;
+	font-size: 25px;
+}
+@media only screen and (max-width: 768px) {
+	.hwP30Left-more{
+		display: none;
+	}
+}
+.hwP30Left-small{
+	font-size: 15px;
+	margin: 90px 0;
+}
+.hwP30Left-img{
+	position: absolute;
+	top: 60px;
+	right: -65px;
+	padding-bottom: 15px;
+	width: 260px;
+}
+@media only screen and (max-width: 768px) {
+	.hwP30Left-img{
+		position: absolute;
+		top: -100px;
+		left: 285px;
+	}
+}
+.img2{
+	position: absolute;
+	bottom: -40px;
+	width: 100%;
+	height: 100px;
+}
+@media only screen and (min-width: 1024px) {
+	.img3:hover{
+		transform: translateY(-20px);
+		transition-duration:0.3s;			
+	}
+	.img3:hover .img2{
+		transform: translateY(20px);
+		transition-duration:0.3s;	
+	}
+}
+
+.hwP30Right{
+	float: left;
+	margin-left: 10%;
+	width: 40%;
+	height: 100%;
+	position: relative;
+}
+@media only screen and (max-width: 768px) {
+	.hwP30Right{
+		width: 100%;
+		margin-left: 0;
+		margin-top: 30px;
+	}
+}
+.hwP30Right img{
+	width: 100%;
+	height: 40%;
+}
+
+.imgBottom{
+	width: 70%;
+	height: 50%;
+	padding: 10% 15%;
+	background-color: #DDE6ED;
+}
+
+.imgBottom-p1{
+	color: darkgray;
+	font-size: 16px;
+	margin-bottom: 30px;
+}
+.imgBottom-p2{
+	font-size: 18px;
+	margin-top: 20px;
+}
+.imgBottom-p3{
+	margin-top: 110px;
+	font-size: 25px;
+}
+@media only screen and (max-width: 768px) {
+	.hwP30Right img{
+		height: 60%;		
+	}
+	.imgBottom{
+		height: 30%;
+		padding-top: 5%;
+		text-align: center;
+	}
+	.imgBottom-p1{
+		margin-bottom: 20px;
+	}
+	.imgBottom-p2{
+		margin-top: 10px;
+	}
+	.imgBottom-p3{
+		display: none;
+	}
+}
+.hwMateX{/*hwMateX*/
+	width: 100%;
+	position: relative;
+}
+.big{
+	width: 100%;
+	height: 100%;
+}
+.small{
+	position: absolute;
+	right: 50px;
+	top: 30px;
+}
+.knowMore{
+	position: absolute;
+	bottom: 200px;
+	right: 100px;
+	font-size: 20px;
+}
+
+
+
+
+
+
 .footer{
 	background-color: #f0f0f0;
 	padding-top: 60px;
@@ -311,7 +516,7 @@
 	background-color: #222222;
 	position: relative;
 }
-.containerr{
+.containerrr{
 	width: 85%;
 	height: 100%;
 	line-height: 50px;
