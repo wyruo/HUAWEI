@@ -249,7 +249,7 @@
 	height: 650px;
 	position: relative;
 	overflow: hidden;
-	margin-bottom: 40px;
+	margin-bottom: 70px;
 	padding-top: 100px;
 }
 @media only screen and (max-width: 768px) {
@@ -393,7 +393,9 @@
 }
 .hwMateX{/*hwMateX*/
 	width: 100%;
+	height: 700px;
 	position: relative;
+	margin-bottom: 50px;
 }
 .big{
 	width: 100%;
@@ -406,17 +408,281 @@
 }
 .knowMore{
 	position: absolute;
-	bottom: 200px;
-	right: 100px;
-	font-size: 20px;
+	bottom: 390px;
+	right: 200px;
+	font-size: 24px;
+}
+.yin{
+	display: none;
+}
+@media only screen and (max-width: 768px) {
+	.big{
+		display: none;
+	}
+	.yin{
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
+	.small{
+		position: absolute;
+		left: 70px;
+	}
+	.knowMore{
+		display: none;
+	}
+}
+.successThing{/*成功故事*/
+	width: 100%;
+	height: 560px;
+	position: relative;
+	margin-bottom: 80px;
+}
+.successThingTitle i{
+	padding-left: 10px;
+}
+.successThingTitle a:hover .i {
+	position: relative;
+	left: 15px;
+}
+.successThingPart{
+	width: 100%;
+	height: 390px;
+	padding-top: 110px;
+	position: relative;
+}
+.successThingPart1{
+	width: 28%;
+	height: 100%;
+	float: left;
+	margin: 0 3.5%;
+	background-color: #dde6ed;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	position: relative;
+}
+.successThingPart1 img{
+	width: 100%;
+	height: 180px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	position: absolute;
+	top: -80px;
+	right: 0;	
+}
+.successThingPart1 img:hover{
+	position: absolute;
+	top: -80px;
+	right: 23px;
+}
+.tuXia{
+	width: 76%;
+	height: 210px;
+	padding: 40px;
+	position: absolute;
+	bottom: 0;
+}
+.tuXia p{
+	font-size: 15px;
+	color: gray;
+	margin-bottom: 25px;	
+}
+.tuXia h3{
+	font-size: 23px;
+}
+.tuXia .more{
+	margin-top: 40px;
+	font-size: 23px;
+	color: black;
+}
+.tuXia .more i{
+	padding-left: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+	.successThing{
+		height: 585px;
+		margin-bottom: 30px;
+	}
+	.successThingTitle h2{
+		font-size: 28px;
+		padding-left: 20px;
+	}
+	.successThingTitle a{
+		display: none;
+	}
+	.successThingPart{
+		width: 90%;
+		height: 87%;
+		padding: 2% 5% 0 5%;
+	}
+	.successThingPart1{
+		width: 100%;
+		margin: 0 0 30px 0;
+		height: 150px;
+		
+	}
+	.successThingPart1 img{
+		width: 40%;
+		height: 150px;
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	.tuXia{
+		width: 50%;
+		padding: 4% 5%;
+		height: auto;
+	}
+	.tuXia p{
+		margin-bottom: 16px;
+	}
+	.tuXia h3{
+		font-size: 18px;
+	}
+	.tuXia .more{
+		display: none;
+	}
 }
 
 
 
 
-
-
-.footer{
+.news{/*近期新闻*/
+	width: 100%;
+	height: 600px;
+	position: relative;
+}
+.successThingTitle,.newsTitle{
+	width: 100%;
+	height: 60px;
+	font-size: 25px;
+	line-height: 60px;
+}
+.successThingTitle h2,.newsTitle h2{	
+	float: left;
+	
+}
+.successThingTitle a,.newsTitle a{
+	color: black;
+	text-decoration: none;
+	float: right;	
+}
+.newsTitle a:hover .i{
+	position: relative;
+	left: 15px;
+}
+.newsPart{
+	width: 100%;
+	height: 540px;
+}
+.newsPart1{
+	width: 35%;
+	height: 100%;
+	float: left;
+	margin-left: 2%;
+	margin-right: 2%;			
+}
+.newsPart2{
+	width: 60%;
+	height: 100%;
+	float: left;
+}
+.newsPart1 img{
+	width: 100%;
+	height: 240px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+.newsInformation{
+	width: 84%;
+	height: 232px;
+	background-color: #DDE6ED;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	padding: 8% 8%;	
+}
+.newsInformation .time{
+	color: gray;
+	font-size: 16px;	
+}
+.xianYin h2{
+	width: 100%;
+	margin-top: 20px;
+}
+.xianYin .yin{
+	display: none;
+	padding-top: 25px;
+	font-size: 18px;
+	letter-spacing: 2px;
+}
+.newsInformation .more{
+	font-size: 25px;
+	margin-top: 90px;
+}
+.newsInformation .more i{
+	padding-left: 10px;
+}
+.newsPart2{
+	margin-left: 8%;
+	width: 53%;
+	height: 100%;
+}
+.newsPart2 ul{
+	list-style-type: none;
+	padding-right: 7%;
+	height: 100%;
+}
+.newsPart2 ul li{
+	padding-top: 110px;
+}
+.newsPart2 ul li p{
+	color: gray;
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+.newsPart2 ul li a{
+	color: black;
+	font-size: 20px;
+	float: left;
+	text-decoration: none;
+}
+.newsPart2 ul li a:hover{
+	text-decoration: underline;
+}
+@media only screen and (max-width: 768px) {
+	.newsTitle h2{
+		font-size: 28px;
+		padding-left: 20px;
+	}
+	.newsTitle a{
+		display: none;
+	}	
+	.newsPart1{
+		width: 100%;
+		margin: 0;
+		height: auto;
+	}
+	.newsInformation{
+		text-align: center;
+	}
+	.xianYin .yin{
+		display: block;
+		line-height: 22px;
+	}
+	.newsInformation .more{
+		display: none;
+	}
+	.newsPart2{
+		width: 100%;
+		margin: 0;
+	}
+	.newsPart2 ul{
+		padding-top: 30px;
+		padding-left: 30px;
+	}
+}
+.footer{/*底部*/
 	background-color: #f0f0f0;
 	padding-top: 60px;
 }
