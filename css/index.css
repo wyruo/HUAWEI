@@ -8,14 +8,18 @@
 	margin: 0 auto;
 	position: relative;
 }
-
+@media only screen and (max-width: 1200px) {
+	.container{
+		width: 95%;
+	}
+}
 .containerr{
 	width: 80%;
 	height: 100%;
 	margin: 0 auto;
 	position: relative;
 }
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1200px) {
 	.containerr{
 		width: 100%;
 	}
@@ -149,10 +153,12 @@
 		display: none;
 	}
 }
-.twoLi{/*标志右侧俩列表*/
-	width: 60%;
+.classifyPart1{/*标志右侧俩列表*/
+	width: 63%;
 	height: 100%;
 	float: left;
+	margin-right: 6%;
+	border-right: 2px solid gainsboro;
 }
 .classify{
 	width: 50%;
@@ -163,7 +169,11 @@
 	vertical-align:middle;
 	overflow: hidden;
 }
-.classify:hover{
+
+.classify p{
+	float: left;
+}
+.classify p:hover{
 	color: #F77C77;
 	cursor: pointer;
 }
@@ -174,11 +184,26 @@
 	float: left;
 }
 
-.hw1{/*华为商城 华为云*/
-	width: 40%;
+.classifyPart2{/*华为商城 华为云*/
+	width: 30%;
 	height: 100%;
 	float: left;
 }
+.classifyYin{
+	width: 100%;
+	height: 400px;
+	background-color: white;
+	position: absolute;
+	top: 100px;
+	left: 0;
+	z-index: 1;
+}
+
+
+
+
+
+
 
 .search{
 	padding-top: 15px;
@@ -231,6 +256,9 @@
 	.searchSuo{
 		display: block;
 	}
+	.searchClose{
+		width: 100%;
+	}
 }
 .searchSuo-ul{
 	list-style-type: none;
@@ -242,7 +270,7 @@
 	margin-top: 20px;
 	font-size: 25px;
 	color: #060606ad;
-	cursor: pointer;*/
+	cursor: pointer;
 }
 .hwP30{/*HUAWEI P30*/
 	width: 100%;
@@ -432,19 +460,133 @@
 		display: none;
 	}
 }
+.activity{/*展会活动*/
+	width: 100%;
+	height: 580px;
+	position: relative;
+	margin-bottom: 50px;
+}
+.activityTitle,.successThingTitle,.newsTitle{/*展会活动 成功故事 近期新闻 标题部分*/
+	width: 100%;
+	height: 60px;
+	font-size: 25px;
+	line-height: 60px;
+}
+.activityTitle h2,.successThingTitle h2,.newsTitle h2{/*展会活动 成功故事 近期新闻 h2部分*/	
+	float: left;
+	
+}
+.activityTitle a,.successThingTitle a,.newsTitle a{/*展会活动 成功故事 近期新闻  查看更多部分*/
+	color: black;
+	text-decoration: none;
+	float: right;	
+}
+.activityTitle i,.successThingTitle i,.newsTitle i{/*展会活动 成功故事 近期新闻  查看更多的i部分*/
+	padding-left: 10px;
+}
+.activityTitle a:hover .i {/*触碰时效果*/
+	position: relative;
+	left: 15px;
+}
+.successThingTitle a:hover .i {/*触碰时效果*/
+	position: relative;
+	left: 15px;
+}
+.newsTitle a:hover .i{/*触碰时效果*/
+	position: relative;
+	left: 15px;
+}
+.activityPart{ 
+	width: 100%;
+	height: 520px;
+}
+.activityLeft{
+	width: 40%;
+	height: 280px;
+	padding: 5% 5%;
+	margin: 5% 0;
+	background-color: #DCE6EE;
+	float: left;
+}
+
+.activityP1{
+	color: gray;
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+.activityLeft h3{
+	font-size: 28px;
+	margin-bottom: 20px;
+}
+.activityTime{
+	margin-bottom: 20px;
+	font-size: 18px;
+}
+.activityP2{
+	margin-bottom: 30px;
+	font-size: 18px;
+	line-height: 26px;
+}
+.activityMore{
+	font-size: 20px;
+}
+.activityRight{
+	width: 50%;
+	height: 100%;
+	float: left;
+}
+.activityRight img{
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+}
+@media only screen and (max-width: 768px) {
+	.activity{
+		height: 620px;
+	}
+	.activityTitle{
+		padding-left: 5%;
+		width: 95%;
+	}
+	.activityTitle a{
+		display: none;
+	}
+	.activityPart{
+		width: 96%;
+		height: 560px;
+		padding: 0 2%;
+	}
+	.activityLeft{
+		width: 90%;
+		text-align: center;
+		padding: 26% 5% 0;
+		margin-top: 15%;
+	}
+	.activityRight{
+		width: 40%;
+		height: auto;
+		position: absolute;
+		top: 10%;
+		left: 30%;
+	}
+	.activityRight img{
+		height: auto;
+	}
+	.activityMore{
+		display: none;
+	}
+}
+
+
+
+
 .successThing{/*成功故事*/
 	width: 100%;
 	height: 560px;
 	position: relative;
 	margin-bottom: 80px;
 }
-.successThingTitle i{
-	padding-left: 10px;
-}
-.successThingTitle a:hover .i {
-	position: relative;
-	left: 15px;
-}
+
 .successThingPart{
 	width: 100%;
 	height: 390px;
@@ -544,34 +686,12 @@
 		display: none;
 	}
 }
-
-
-
-
 .news{/*近期新闻*/
 	width: 100%;
 	height: 600px;
 	position: relative;
 }
-.successThingTitle,.newsTitle{
-	width: 100%;
-	height: 60px;
-	font-size: 25px;
-	line-height: 60px;
-}
-.successThingTitle h2,.newsTitle h2{	
-	float: left;
-	
-}
-.successThingTitle a,.newsTitle a{
-	color: black;
-	text-decoration: none;
-	float: right;	
-}
-.newsTitle a:hover .i{
-	position: relative;
-	left: 15px;
-}
+
 .newsPart{
 	width: 100%;
 	height: 540px;
